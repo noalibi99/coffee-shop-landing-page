@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notre Entreprise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/imgs/logo.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <form class="d-flex">
+                    <div class="search-box">
+                        <input type="search" class="form-control" placeholder="Search...">
+                        <button class="btn btn-search" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/imgs/carousel1.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/carousel2.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/carousel3.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services-section py-5" id="services">
+        <div class="container">
+            <h2 class="text-center mb-5">Notre Carte</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-12">
+                    <div class="service-card">
+                        <div class="service-card-inner">
+                            <div class="service-image">
+                                <img src="imgs/CaffeLatte.jpg" alt="Service 1">
+                            </div>
+                            <div class="service-content">
+                                <h3>Nos boissons chaudes</h3>
+                                <p>Savourez nos délicieuses boissons chaudes, préparées avec soin pour réchauffer vos journées.</p>
+                                <a href="#" class="btn btn-primary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="service-card">
+                        <div class="service-card-inner">
+                            <div class="service-image">
+                                <img src="imgs/IcedCinnamonDolceLatte.jpg" alt="Service 2">
+                            </div>
+                            <div class="service-content">
+                                <h3>Nos boissons froides</h3>
+                                <p>Idéales pour l'été, nos boissons froides vous apporteront fraîcheur et énergie.</p>
+                                <a href="#" class="btn btn-primary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="service-card">
+                        <div class="service-card-inner">
+                            <div class="service-image">
+                                <img src="imgs/Croissant.jpg" alt="Service 3">
+                            </div>
+                            <div class="service-content">
+                                <h3>Nos Pâtisseries</h3>
+                                <p>Accompagnez votre café avec nos pâtisseries maison, fraîches et savoureuses.</p>
+                                <a href="#" class="btn btn-primary">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Notre Équipe</h2>
+            <div class="row">
+                <div class="col-lg-4 d-none d-lg-block text-center ">
+                    <div class="team-member">
+                        <img src="/imgs/barista.jpg" class="rounded-circle mb-3" alt="Membre 1">
+                        <h3>Jean Dupont</h3>
+                        <p>Barista</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block text-center">
+                    <div class="team-member">
+                        <img src="imgs/chef_patissier.jpg" class="rounded-circle mb-3" alt="Membre 2">
+                        <h3>Marie Martin</h3>
+                        <p>Chef Patissier</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block text-center">
+                    <div class="team-member">
+                        <img src="imgs/gerant.jpg" class="rounded-circle mb-3" alt="Membre 3">
+                        <h3>Pierre Bernard</h3>
+                        <p>Gérant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-top py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <h2 class="text-white mb-4">Contactez-nous</h2>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+212 523-345678</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>contact@cafedelices.ma</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>12 Rue des Cafés, Quartier Gauthier, Casablanca</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map-container">
+                            <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.1650941456555!2d-7.360453299999999!3d33.7046767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7b6d0db170185%3A0x79759da1a916fc50!2sENSET%20Mohammedia!5e0!3m2!1sen!2sma!4v1742266005799!5m2!1sen!2sma"
+                                    style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3">
+            <div class="container text-center">
+                <p class="m-0">&copy; 2025 MOHAMMED EL HIMAR. </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
